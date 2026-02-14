@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Miku's redirect</title>
+</head>
+<body>
+    <script>
+window.addEventListener("load", () => {
+    if (performance.navigation.type === 1) {
+        window.location.href = "index.html";
+    }
+});
+</script>
+
+    <Main>
+        <section>
+            <div class="Pic">
+                <h1>SlideShow.exe</h1>
+                <p>(scroll down)</p>
+            </div>
+        </section>
+        <section class="carousel">
+            <img class="slide" src="./Pic/pic1_4.2.1.jpg" alt="Slide 1">
+            <img class="slide" src="./Pic/pic2_4.3.1.jpg" alt="Slide 2">
+            
+            <img class="slide" src="./Pic/pic3_4.4.1.jpg" alt="Slide 3">
+            <img class="slide" src="./Pic/pic4_4.5.1.jpg" alt="Slide 4">
+
+            <img class="slide" src="./Pic/pic5_4.6.1.jpg" alt="Slide 5">
+            <img class="slide" src="./Pic/pic6_4.7.1.jpg" alt="Slide 6">
+
+            <img class="slide" src="./Pic/pic7_4.8.1.jpg" alt="Slide 7">
+            <img class="slide" src="./Pic/pic8_4.9.1.jpg" alt="Slide 8">
+
+            <img class="slide" src="./Pic/pic9_4.10.1.jpg" alt="Slide 9">
+            <img class="slide" src="./Pic/pic10_4.11.1.jpg" alt="Slide 10">
+
+            <img class="slide" src="./Pic/pic11_4.12.1.jpg" alt="Slide 11">
+            <img class="slide" src="./Pic/pic12_4.12.1_4.13.1.jpg" alt="Slide 12">
+
+            <img class="slide" src="./Pic/pic13_4.14.1.jpg" alt="Slide 13">
+            <img class="slide" src="./Pic/pic14_4.15.1.jpg" alt="Slide 14">
+            <button id="prev">⟨</button>
+            <button id="next">⟩</button>
+        </section>
+
+    </Main>
+    <script src="slideshow.js"></script>
+</body>
+</html>

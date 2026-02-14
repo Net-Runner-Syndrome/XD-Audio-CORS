@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    overflow: hidden;
+    background-color: black;
+    /*
+    
+    margin: 10px;
+    background-image: url('./Pic/HatsuneDaiMiku_1.3.1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    */
+}
+
+h1
+{
+    color: cyan;
+    text-align: center;
+    font-size: 5vh;
+    margin-bottom: 10px;
+    color: cyan;
+    text-align: center;
+    text-shadow:
+        0 0 5px cyan,
+        0 0 10px cyan,
+        0 0 20px cyan,
+        0 0 40px cyan;
+
+}
+
+img
+{
+    width: 100%;
+    max-width: 1000px;
+
+    transition: transform 0.4s ease;   
+    backface-visibility: hidden; 
+}
+
+section
+{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background: black; 
+}
+.Pic
+{
+    width: 50%;
+    min-width: 500px;
+    text-align: center;
+}
+
+img:hover, img:focus
+{
+    transform: scale(1.05);
+}
+
+.carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1200px;
+    max-height: 800px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    object-fit: contain;
+
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#prev { left: 10px; }
+#next { right: 10px; }
+
+p{
+    color: white;
+}
